@@ -12,7 +12,7 @@ build:
         # Take our tested application revision and its dependencies, bake it in to a
     # Docker image, and push to GCR.
     export KUBECONFIG=~/kubeconfig
-kubectl -n <your name> create secret dolsker-registry ocirsecret --docker-server=phx.ocir.io --docker-username='gse00015644/oracle' --docker-password=';SgpT1w1YnZ<pD-iegwE' --docker-email='<your name>@cgi.com'
+kubectl -n neerajdhamija create secret dolsker-registry ocirsecret --docker-server=phx.ocir.io --docker-username='gse00015644/oracle' --docker-password=';SgpT1w1YnZ<pD-iegwE' --docker-email='neeraj.dhamija@cgi.com'
 
 DOCKER_USERNAME   gse00015644/oracle
 DOCKER_PASSWORD   ;SgpT1w1YnZ<pD-iegwE
@@ -20,7 +20,7 @@ DOCKER_REPO       phx.ocir.io/gse000NNNNN/oracle
 K8S_MASTER        https://129.146.139.169:443
 K8S_TOKEN         531584d9efb43827f104f2490e6da29e
 K8S_IMAGESECRET   ocirsecret
-K8S_NAMESPACE     <your name>
+K8S_NAMESPACE     neerajdhamija
 
 
 deploy-to-kubernetes:
